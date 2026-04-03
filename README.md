@@ -35,6 +35,8 @@ bun run build
 npm link
 ```
 
+> **Windows users**: `bun run build` works on Windows. Anthropic-internal packages (`@ant/computer-use-mcp`) are automatically stubbed out during the build — no extra setup needed.
+
 ### Option C: Run directly with Bun (no build step)
 
 ```bash
@@ -358,9 +360,10 @@ src/utils/model/providers.ts     — Added 'openai' provider type
 src/utils/model/configs.ts       — Added openai model mappings
 src/utils/model/model.ts         — Respects OPENAI_MODEL for defaults
 src/utils/auth.ts                — Recognizes OpenAI as valid 3P provider
+scripts/build.ts                 — Stubs @ant/computer-use-mcp (fixes Windows build)
 ```
 
-6 files changed. 786 lines added. Zero dependencies added.
+7 files changed. Zero dependencies added.
 
 ---
 

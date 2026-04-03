@@ -159,6 +159,9 @@ export async function handleBgFlag() { throw new Error("Background sessions are 
           'sharp',
           '@anthropic-ai/mcpb',
           '@ant/claude-for-chrome-mcp',
+          '@ant/computer-use-mcp',
+          '@ant/computer-use-mcp/types',
+          '@ant/computer-use-mcp/sentinelApps',
           '@anthropic-ai/sandbox-runtime',
           'asciichart',
           'plist',
@@ -203,6 +206,14 @@ export const ColorFile = null;
 export const getSyntaxTheme = noop;
 export const plot = noop;
 export const createClaudeForChromeMcpServer = noop;
+// @ant/computer-use-mcp exports
+export const bindSessionContext = noop;
+export const buildComputerUseTools = noop;
+export const createComputerUseMcpServer = noop;
+export const DEFAULT_GRANT_FLAGS = {};
+export const API_RESIZE_PARAMS = {};
+export const targetImageSize = noop;
+export const getSentinelCategory = noop;
 // OpenTelemetry exports
 export const ExportResultCode = { SUCCESS: 0, FAILED: 1 };
 export const resourceFromAttributes = noop;
